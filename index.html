@@ -11,13 +11,14 @@
       <h1>Tasks</h1>
 
       <form id="task-form" class="task-form">
-        <input
-          id="new-task"
-          name="new-task"
-          placeholder="Add a task"
-          required
-        />
-        <button type="submit">Add</button>
+          <input id="new-task" name="new-task" placeholder="Add a task" required />
+          <select id="task-priority" aria-label="Priority">
+            <option value="low">Low</option>
+            <option value="medium" selected>Medium</option>
+            <option value="high">High</option>
+          </select>
+          <input type="date" id="task-due-date" aria-label="Due date" />
+          <button type="submit">Add</button>
       </form>
 
       <div class="filters" aria-label="Task filters">

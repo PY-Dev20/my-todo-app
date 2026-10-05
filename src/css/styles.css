@@ -91,3 +91,42 @@ h1 {
   color: #6b7280;
   font-size: 14px;
 }
+.task-form select,
+.task-form input[type="date"] {
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+  background: #fff;
+  color: inherit;
+}
+
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+.badge-low    { background: #dcfce7; color: #166534; }
+.badge-medium { background: #fef3c7; color: #92400e; }
+.badge-high   { background: #fee2e2; color: #991b1b; }
+
+.due-date { font-size: 13px; color: #6b7280; white-space: nowrap; }
+.due-date.overdue { color: #dc2626; font-weight: 600; }
+
+.task.completed label {
+  text-decoration: line-through;
+  color: #a0aec0;
+}
+
+.edit-input {
+  flex: 1;
+  padding: 4px 8px;
+  border: 1px solid #4299e1;
+  border-radius: 6px;
+  font-size: 16px;
+  font-family: inherit;
+}
