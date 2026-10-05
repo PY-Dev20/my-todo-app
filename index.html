@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tasks</title>
+    <link rel="stylesheet" href="src/css/styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <h1>Tasks</h1>
+
+      <form id="task-form" class="task-form">
+        <input
+          id="new-task"
+          name="new-task"
+          placeholder="Add a task"
+          required
+        />
+        <button type="submit">Add</button>
+      </form>
+
+      <div class="filters" aria-label="Task filters">
+        <button type="button" data-filter="all" aria-pressed="true">
+          All
+        </button>
+        <button type="button" data-filter="active" aria-pressed="false">
+          Active
+        </button>
+        <button type="button" data-filter="completed" aria-pressed="false">
+          Completed
+        </button>
+      </div>
+
+      <ul id="task-list" class="task-list"></ul>
+      <p id="empty-state" class="empty-state" hidden>No tasks</p>
+    </main>
+
+    <script type="module" src="src/js/app.js"></script>
+  </body>
+</html>
